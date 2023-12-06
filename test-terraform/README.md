@@ -30,7 +30,6 @@ Ya puede crear comando con Power Shell desde Visual Studio Code.
             }
         }
     }
-
     provider "azurerm" {
         features {}
     }

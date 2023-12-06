@@ -7,7 +7,7 @@
     - [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 
 3. Autenticarse con Azure Account.
-    - Abrir Command Palette (Ctrl+Shift+P)
+    - Abrir Command Palette `Ctrl+Shift+P`
     - Ingresar `Azure: Sign in`
     - Ingresar credenciales de Azure.
 
@@ -18,5 +18,20 @@ Ya puede crear comando con Power Shell desde Visual Studio Code.
 4. Crear directorio
 5. Cree un archivo denominado `providers.tf` e inserte el siguiente codigo.
 <code>
+    terraform {
+    required_providers {
+        azurerm = {
+        source  = "hashicorp/azurerm"
+        version = "~>3.0"
+        }
+        random = {
+        source  = "hashicorp/random"
+        version = "~>3.0"
+        }
+    }
+    }
 
+    provider "azurerm" {
+    features {}
+    }
 </code>

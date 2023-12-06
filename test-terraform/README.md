@@ -17,7 +17,8 @@ Ya puede crear comando con Power Shell desde Visual Studio Code.
 
 4. Crear directorio
 5. Cree un archivo denominado `providers.tf` e inserte el siguiente codigo.
-<code>
+
+````
 terraform {
     required_providers {
         azurerm = {
@@ -33,4 +34,4 @@ terraform {
 provider "azurerm" {
     features {}
 }
-</code>
+````
